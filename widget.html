@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#060907;--line:#1b2a21;--text:#f3f7f4;--muted:#7d8b82;--green:#75e75b;--red:#ff7777;--amber:#f0c766}
+*{box-sizing:border-box}html,body{margin:0;width:100%;overflow-x:hidden;background:transparent;color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.w{width:100%;min-width:0;border:1px solid var(--line);border-radius:16px;background:var(--bg);overflow:hidden}.h{display:flex;justify-content:space-between;gap:10px;padding:12px 13px;border-bottom:1px solid var(--line)}.k{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--green);font-weight:850}.link{font-size:8px;color:var(--muted);text-decoration:none}.list{display:flex;flex-direction:column}.e{display:grid;grid-template-columns:55px minmax(0,1fr) 38px;gap:8px;align-items:center;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.045);min-width:0}.e:last-child{border-bottom:0}.t{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}.n{font-size:10px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.m{font-size:7px;color:var(--muted);margin-top:3px}.s{text-align:right;font-size:11px;font-weight:800}.crit{color:var(--red)}.high{color:var(--amber)}.med{color:var(--green)}.empty{padding:18px;color:var(--muted);font-size:9px}
+</style></head><body>
+<section class="w"><div class="h"><div class="k">Next Market-Moving Events</div><a class="link" href="https://www.bondstats.org/" target="_blank">Full calendar ↗</a></div><div class="list" id="list"></div></section>
+<script>
+const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+fetch("./data/events.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+ const now=Date.now(),a=(d.events||[]).filter(e=>new Date(e.timestamp)>=now-36e5).sort((a,b)=>new Date(a.timestamp)-new Date(b.timestamp)).slice(0,4);
+ document.getElementById("list").innerHTML=a.length?a.map(e=>{
+  const time=e.timePrecision==="date"?"TBA":new Intl.DateTimeFormat(undefined,{hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(e.timestamp));
+  const cls=e.impactLabel==="CRITICAL"?"crit":e.impactLabel==="HIGH"?"high":"med";
+  return `<div class="e"><div class="t">${esc(time)}</div><div><div class="n">${esc(e.title)}</div><div class="m">${esc(e.country)} · ${esc(e.category)}</div></div><div class="s ${cls}">${esc(e.impactScore)}</div></div>`
+ }).join(""):'<div class="empty">No upcoming events.</div>';
+}).catch(()=>document.getElementById("list").innerHTML='<div class="empty">Calendar feed unavailable.</div>');
+</script></body></html>
