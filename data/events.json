@@ -2,7 +2,7 @@
   "meta": {
     "name": "BondStats Market Calendar",
     "version": "2.0.0-final",
-    "generatedAt": "2026-09-19T10:56:52.807133Z",
+    "generatedAt": "2026-09-19T15:52:10.811016Z",
     "timezone": "UTC",
     "method": "Official-source ingestion + deterministic BondStats market-impact model",
     "coverage": [
@@ -23,30 +23,6 @@
     ]
   },
   "events": [
-    {
-      "id": "boe-52db2cbaa2aa",
-      "title": "Bank of England MPC Decision",
-      "country": "GB",
-      "region": "Europe",
-      "category": "Central Bank",
-      "eventType": "policy",
-      "timestamp": "2026-09-17T11:00:00Z",
-      "timePrecision": "convention",
-      "impactScore": 96,
-      "impactLabel": "CRITICAL",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Rate expectations"
-      ],
-      "source": "Bank of England",
-      "sourceShort": "BoE",
-      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-      "official": true,
-      "status": "scheduled",
-      "description": "Monetary Policy Committee decision, summary and minutes.",
-      "timingNote": "Official decision date; timestamp follows the Bank's standard noon-London publication convention."
-    },
     {
       "id": "fed-95c392156cda",
       "title": "Federal Reserve FOMC Decision",
@@ -1628,7 +1604,7 @@
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "healthy",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "eventsParsed": 92
     },
     {
@@ -1636,7 +1612,7 @@
       "name": "U.S. Bureau of Labor Statistics",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "degraded",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "warning": "'No time zone found with key US-Eastern'",
       "eventsParsed": 0,
       "fallback": "previous feed"
@@ -1646,7 +1622,7 @@
       "name": "U.S. Bureau of Economic Analysis",
       "url": "https://www.bea.gov/news/schedule",
       "status": "healthy",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "eventsParsed": 7
     },
     {
@@ -1654,7 +1630,7 @@
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "status": "degraded",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "warning": "'No time zone found with key Europe/Frankfurt'",
       "eventsParsed": 2,
       "fallback": "previous feed"
@@ -1664,7 +1640,7 @@
       "name": "Bank of England",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "status": "healthy",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "eventsParsed": 16
     },
     {
@@ -1672,7 +1648,7 @@
       "name": "Bank of Japan",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
       "status": "healthy",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "eventsParsed": 26
     },
     {
@@ -1680,7 +1656,7 @@
       "name": "Swiss National Bank",
       "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
       "status": "healthy",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "eventsParsed": 12
     },
     {
@@ -1688,7 +1664,7 @@
       "name": "U.S. Treasury Auctions",
       "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
       "status": "healthy",
-      "lastChecked": "2026-09-19T10:56:52.807133Z",
+      "lastChecked": "2026-09-19T15:52:10.811016Z",
       "eventsParsed": 4
     }
   ]
