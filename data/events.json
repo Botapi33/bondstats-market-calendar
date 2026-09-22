@@ -2,7 +2,7 @@
   "meta": {
     "name": "BondStats Market Calendar",
     "version": "2.0.0-final",
-    "generatedAt": "2026-09-22T11:36:08.050000Z",
+    "generatedAt": "2026-09-22T16:56:24.118942Z",
     "timezone": "UTC",
     "method": "Official-source ingestion + deterministic BondStats market-impact model",
     "coverage": [
@@ -23,52 +23,6 @@
     ]
   },
   "events": [
-    {
-      "id": "bea-f4cf36e0b680",
-      "title": "U.S. International Trade in Goods and Services",
-      "country": "US",
-      "region": "North America",
-      "category": "Macro",
-      "eventType": "macro",
-      "timestamp": "2026-09-20T12:30:00Z",
-      "timePrecision": "exact",
-      "impactScore": 65,
-      "impactLabel": "MEDIUM",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX"
-      ],
-      "source": "U.S. Bureau of Economic Analysis",
-      "sourceShort": "BEA",
-      "sourceUrl": "https://www.bea.gov/news/schedule",
-      "official": true,
-      "status": "scheduled",
-      "description": ""
-    },
-    {
-      "id": "bea-7fdc7860921d",
-      "title": "Personal Income and Outlays",
-      "country": "US",
-      "region": "North America",
-      "category": "Inflation",
-      "eventType": "macro",
-      "timestamp": "2026-09-20T12:30:00Z",
-      "timePrecision": "exact",
-      "impactScore": 92,
-      "impactLabel": "CRITICAL",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Inflation expectations",
-        "Rate expectations"
-      ],
-      "source": "U.S. Bureau of Economic Analysis",
-      "sourceShort": "BEA",
-      "sourceUrl": "https://www.bea.gov/news/schedule",
-      "official": true,
-      "status": "scheduled",
-      "description": ""
-    },
     {
       "id": "fed-d81d316d5a83",
       "title": "Federal Reserve FOMC Decision",
@@ -1532,7 +1486,7 @@
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "healthy",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "eventsParsed": 92
     },
     {
@@ -1540,7 +1494,7 @@
       "name": "U.S. Bureau of Labor Statistics",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "degraded",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "warning": "'No time zone found with key US-Eastern'",
       "eventsParsed": 0,
       "fallback": "previous feed"
@@ -1550,7 +1504,7 @@
       "name": "U.S. Bureau of Economic Analysis",
       "url": "https://www.bea.gov/news/schedule",
       "status": "healthy",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "eventsParsed": 7
     },
     {
@@ -1558,7 +1512,7 @@
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "status": "degraded",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "warning": "'No time zone found with key Europe/Frankfurt'",
       "eventsParsed": 2,
       "fallback": "previous feed"
@@ -1568,7 +1522,7 @@
       "name": "Bank of England",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "status": "healthy",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "eventsParsed": 16
     },
     {
@@ -1576,7 +1530,7 @@
       "name": "Bank of Japan",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
       "status": "healthy",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "eventsParsed": 26
     },
     {
@@ -1584,7 +1538,7 @@
       "name": "Swiss National Bank",
       "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
       "status": "healthy",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "eventsParsed": 12
     },
     {
@@ -1592,7 +1546,7 @@
       "name": "U.S. Treasury Auctions",
       "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
       "status": "healthy",
-      "lastChecked": "2026-09-22T11:36:08.050000Z",
+      "lastChecked": "2026-09-22T16:56:24.118942Z",
       "eventsParsed": 4
     }
   ]
