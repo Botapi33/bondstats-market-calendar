@@ -2,7 +2,7 @@
   "meta": {
     "name": "BondStats Market Calendar",
     "version": "2.0.0-final",
-    "generatedAt": "2026-10-13T14:09:12.416255Z",
+    "generatedAt": "2026-10-13T22:43:26.359506Z",
     "timezone": "UTC",
     "method": "Official-source ingestion + deterministic BondStats market-impact model",
     "coverage": [
@@ -23,30 +23,6 @@
     ]
   },
   "events": [
-    {
-      "id": "fed-95d8aa98215a",
-      "title": "Federal Reserve FOMC Decision",
-      "country": "US",
-      "region": "North America",
-      "category": "Central Bank",
-      "eventType": "policy",
-      "timestamp": "2026-10-11T18:00:00Z",
-      "timePrecision": "convention",
-      "impactScore": 100,
-      "impactLabel": "CRITICAL",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Rate expectations"
-      ],
-      "source": "Federal Reserve",
-      "sourceShort": "Fed",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "official": true,
-      "status": "scheduled",
-      "description": "Federal Open Market Committee policy decision.",
-      "timingNote": "Meeting date is official. Timestamp uses the standard scheduled FOMC decision-release convention."
-    },
     {
       "id": "fed-2ac22ddbcce7",
       "title": "Federal Reserve FOMC Decision",
@@ -1250,7 +1226,7 @@
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "healthy",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "eventsParsed": 93
     },
     {
@@ -1258,7 +1234,7 @@
       "name": "U.S. Bureau of Labor Statistics",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "degraded",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "warning": "'No time zone found with key US-Eastern'",
       "eventsParsed": 0,
       "fallback": "previous feed"
@@ -1268,7 +1244,7 @@
       "name": "U.S. Bureau of Economic Analysis",
       "url": "https://www.bea.gov/news/schedule",
       "status": "healthy",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "eventsParsed": 5
     },
     {
@@ -1276,7 +1252,7 @@
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "status": "degraded",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "warning": "'No time zone found with key Europe/Frankfurt'",
       "eventsParsed": 2,
       "fallback": "previous feed"
@@ -1286,7 +1262,7 @@
       "name": "Bank of England",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "status": "healthy",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "eventsParsed": 16
     },
     {
@@ -1294,7 +1270,7 @@
       "name": "Bank of Japan",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
       "status": "healthy",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "eventsParsed": 26
     },
     {
@@ -1302,7 +1278,7 @@
       "name": "Swiss National Bank",
       "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
       "status": "healthy",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "eventsParsed": 10
     },
     {
@@ -1310,7 +1286,7 @@
       "name": "U.S. Treasury Auctions",
       "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
       "status": "healthy",
-      "lastChecked": "2026-10-13T14:09:12.416255Z",
+      "lastChecked": "2026-10-13T22:43:26.359506Z",
       "eventsParsed": 6
     }
   ]
