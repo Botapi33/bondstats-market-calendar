@@ -2,7 +2,7 @@
   "meta": {
     "name": "BondStats Market Calendar",
     "version": "2.0.0-final",
-    "generatedAt": "2026-10-30T22:16:50.634583Z",
+    "generatedAt": "2026-10-31T05:37:45.525431Z",
     "timezone": "UTC",
     "method": "Official-source ingestion + deterministic BondStats market-impact model",
     "coverage": [
@@ -23,30 +23,6 @@
     ]
   },
   "events": [
-    {
-      "id": "boj-d8d8ccc990d7",
-      "title": "Bank of Japan Monetary Policy Decision",
-      "country": "JP",
-      "region": "Asia",
-      "category": "Central Bank",
-      "eventType": "policy",
-      "timestamp": "2026-10-29T03:00:00Z",
-      "timePrecision": "date",
-      "impactScore": 94,
-      "impactLabel": "CRITICAL",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Rate expectations"
-      ],
-      "source": "Bank of Japan",
-      "sourceShort": "BoJ",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-      "official": true,
-      "status": "scheduled",
-      "description": "Second day of the Bank of Japan Monetary Policy Meeting.",
-      "timingNote": "Official meeting date; policy-statement release time is not fixed and is displayed as Time TBA."
-    },
     {
       "id": "ecb-mp-2026-10-29",
       "title": "ECB Monetary Policy Decision",
@@ -1029,7 +1005,7 @@
       "name": "Federal Reserve",
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "status": "healthy",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "eventsParsed": 93
     },
     {
@@ -1037,7 +1013,7 @@
       "name": "U.S. Bureau of Labor Statistics",
       "url": "https://www.bls.gov/schedule/news_release/bls.ics",
       "status": "degraded",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "warning": "'No time zone found with key US-Eastern'",
       "eventsParsed": 0,
       "fallback": "previous feed"
@@ -1047,7 +1023,7 @@
       "name": "U.S. Bureau of Economic Analysis",
       "url": "https://www.bea.gov/news/schedule",
       "status": "healthy",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "eventsParsed": 4
     },
     {
@@ -1055,7 +1031,7 @@
       "name": "European Central Bank",
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
       "status": "degraded",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "warning": "'No time zone found with key Europe/Frankfurt'",
       "eventsParsed": 2,
       "fallback": "previous feed"
@@ -1065,7 +1041,7 @@
       "name": "Bank of England",
       "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
       "status": "healthy",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "eventsParsed": 16
     },
     {
@@ -1073,7 +1049,7 @@
       "name": "Bank of Japan",
       "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
       "status": "healthy",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "eventsParsed": 26
     },
     {
@@ -1081,7 +1057,7 @@
       "name": "Swiss National Bank",
       "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
       "status": "healthy",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "eventsParsed": 10
     },
     {
@@ -1089,9 +1065,9 @@
       "name": "U.S. Treasury Auctions",
       "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
       "status": "degraded",
-      "lastChecked": "2026-10-30T22:16:50.634583Z",
+      "lastChecked": "2026-10-31T05:37:45.525431Z",
       "warning": "HTTP Error 404: The requested content does not exist.",
-      "eventsParsed": 2,
+      "eventsParsed": 1,
       "fallback": "previous feed"
     }
   ]
